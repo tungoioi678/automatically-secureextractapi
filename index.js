@@ -1,6 +1,9 @@
-const gcdRecursive = (a, b) => {
-  if (b === 0) {
-    return a;
+function isSubsequence(s, t) {
+  let i = 0;
+  let j = 0;
+  while (i < s.length && j < t.length) {
+    if (s[i] === t[j]) i++;
+    j++;
   }
-  return gcdRecursive(b, a % b);
-};
+  return i === s.length;
+}
