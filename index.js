@@ -1,3 +1,1 @@
-function averageArray(arr) {
-  return arr.reduce((acc, curr) => acc + curr, 0) / arr.length;
-}
+const drop = (arr, n = 1) => arr.slice(n);
